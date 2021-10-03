@@ -225,6 +225,61 @@ app {
     width: 100%;
 }
 
+.contact-information-page {
+    background-image: url("../resources/pawel-czerwinski--0xCCPIbl3M-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-shadow: 2px 2px black;
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+}
+
+.contact-information-section {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5rem;
+    color: #f5eeee;
+    text-shadow: 2px 2px black;
+}
+
+    .contact-information-section ul {
+        list-style: none;
+    }
+
+.contact-information-title {
+    position: relative;
+    text-align: center;
+    font-weight: 700;
+}
+
+    .contact-information-title h1 {
+        background-color: rgba(0, 0, 0, .8);
+        width: 300px;
+        border-radius: 25px;
+    }
+
+.contact-information-item {
+    flex: 1;
+    flex-basis: auto;
+    margin: 0 18px 42px;
+    background-color: rgba(0, 0, 0, .8);
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 25px;
+}
+
+.offers {
+    background-image: url("../resources/tamanna-rumee-9ROY8fXmTto-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-shadow: 2px 2px black;
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+}
+
 @media (max-width: 767.98px) {
     .main .top-row:not(.auth) {
         display: none;
@@ -276,7 +331,14 @@ app {
         flex-basis: 32%;
         max-width: 300px;
     }
-}
+
+    .contact-information-section {
+        flex-direction: row;
+    }
+
+    .contact-information-item {
+        flex-basis: 0;
+    }
 
 @media (min-width: 640px) {
     .piza-item {
