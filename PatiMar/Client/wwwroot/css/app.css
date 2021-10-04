@@ -41,10 +41,10 @@ app {
             white-space: nowrap;
             margin-left: 1.5rem;
         }
-        .main .top-row a {
+/*        .main .top-row a {
             color: #d7d7d7;
         }
-
+*/
 .main .top-row a:first-child {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -141,10 +141,70 @@ app {
 }
 
 /*--------------------Customizare ----------------------*/
+.trademark {
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, .8);
+    border-radius: 25px;
+    color: #f5eeee;
+    font-size: 0.9rem;
+}
+.navbar-button {
+    color: black;
+    font-weight: 600;
+}
 
 .important-announcement {
     font-size: 1.5em;
     font-weight: 500;
+}
+
+.welcome {
+    background-image: url("../resources/vitalii-chernopyskyi-Oxb84ENcFfU-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.introduction-section {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    max-width: 1080px;
+    /*max-width: 768px;*/
+    width: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    border-radius: 25px;
+    color: #f5eeee;
+    text-shadow: 2px 2px black;
+}
+
+.featured-section {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    /*    max-width: 1080px;
+*/ /*max-width: 768px;*/
+    width: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    /*    border-radius: 25px;
+*/ color: #f5eeee;
+    text-shadow: 2px 2px black;
+    display: flex;
+    flex-direction: column;
+}
+
+.featured-item {
+    flex: 1;
+    flex-basis: auto;
+    margin: 0 18px 42px;
+    padding: 1rem 2rem 1rem 2rem;
 }
 
 .menu-border {
@@ -166,7 +226,7 @@ app {
     }
 
 .menu {
-    padding-top: 13rem;
+    padding-top: 2rem;
     padding-bottom: 5rem;
     color: #f5eeee;
     text-shadow: 2px 2px black;
@@ -176,7 +236,7 @@ app {
     background-size: cover;
 }
 
-.pizza-section {
+.pizza-section, .offers-section {
     padding-top: 2rem;
     margin-left: auto;
     margin-right: auto;
@@ -232,8 +292,8 @@ app {
     background-size: cover;
     color: white;
     text-shadow: 2px 2px black;
-    padding-top: 20rem;
-    padding-bottom: 20rem;
+    padding-top: 2rem;
+    padding-bottom: 18rem;
 }
 
 .contact-information-section {
@@ -276,8 +336,47 @@ app {
     background-size: cover;
     color: white;
     text-shadow: 2px 2px black;
-    padding-top: 20rem;
-    padding-bottom: 20rem;
+    padding-top: 2rem;
+    padding-bottom: 15rem;
+}
+
+.offers-section {
+    padding-bottom: 10rem;
+}
+
+.offers-item {
+    flex-basis: 100%;
+    max-width: 700px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.red {
+    color: orangered;
+}
+
+.yellow {
+    color: #ffc107;
+}
+
+.image-stack {
+    display: grid;
+    position: relative;
+}
+
+.image-stack__item--bottom {
+    grid-row: 1;
+}
+
+.image-stack__item--top {
+    grid-row: 1;
+    padding-top: 20%;
+}
+
+img {
+    width: 100%;
+    display: block;
 }
 
 @media (max-width: 767.98px) {
@@ -292,6 +391,7 @@ app {
     .main .top-row a, .main .top-row .btn-link {
         margin-left: 0;
     }
+
 }
 
 @media (min-width: 768px) {
@@ -327,18 +427,32 @@ app {
 }
 
 @media (min-width: 992px) {
+    .menu {
+        padding-top: 13rem;
+    }
+
     .pizza-item {
         flex-basis: 32%;
         max-width: 300px;
     }
 
-    .contact-information-section {
+    .offers {
+        padding-top: 15rem;
+    }
+
+    .contact-information-page {
+        padding-top: 18rem;
+    }
+
+    .contact-information-section, .featured-section {
         flex-direction: row;
     }
 
-    .contact-information-item {
+    .contact-information-item, .featured-item {
         flex-basis: 0;
     }
+
+}
 
 @media (min-width: 640px) {
     .piza-item {
