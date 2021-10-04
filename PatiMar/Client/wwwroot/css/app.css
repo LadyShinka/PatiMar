@@ -154,6 +154,10 @@ app {
     font-weight: 600;
 }
 
+.call-button {
+    text-shadow: none;
+}
+
 .important-announcement {
     font-size: 1.5em;
     font-weight: 500;
