@@ -246,20 +246,23 @@ app {
     margin-right: auto;
     margin-bottom: 40px;
     /*    max-width: 1080px;*/
-    max-width: 768px;
     width: 100%;
+}
+
+.pizza-section {
     background-color: rgba(0, 0, 0, .8);
     border-radius: 25px;
+    max-width: 768px;
 }
 
-.pizza-title {
-    font-weight: bold;
-    margin: 0;
-    padding: 24px 15px;
-    text-align: center;
-}
+    .pizza-title {
+        font-weight: bold;
+        margin: 0;
+        padding: 24px 15px;
+        text-align: center;
+    }
 
-.pizza-list {
+.pizza-list, .offers-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -267,12 +270,21 @@ app {
     padding: 0;
 }
 
-.pizza-item {
+.pizza-item, .offers-item {
     flex-basis: 100%;
     max-width: 300px;
+}
+
+.pizza-item {
     margin-bottom: 30px;
     margin-left: 50px;
     margin-right: 50px;
+}
+
+.offers-item {
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .pizza-item-title {
@@ -334,26 +346,24 @@ app {
 }
 
 .offers {
-    background-image: url("../resources/tamanna-rumee-9ROY8fXmTto-unsplash.jpg");
+    background-image: url("../resources/tamas-pap-XLmhRnV8yuc-unsplash.jpg");
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    color: #f5eeee;
+    text-shadow: 2px 2px black;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    color: white;
-    text-shadow: 2px 2px black;
-    padding-top: 2rem;
-    padding-bottom: 15rem;
+
 }
 
 .offers-section {
-    padding-bottom: 10rem;
+    max-width: 1080px;
 }
 
 .offers-item {
-    flex-basis: 100%;
-    max-width: 700px;
-    margin-bottom: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
+    background-color: rgba(0, 0, 0, .9);
+    border-radius: 25px;
 }
 
 .red {
@@ -364,9 +374,21 @@ app {
     color: #ffc107;
 }
 
+.mobile-buttons {
+    display: none;
+}
+
+.featured-buttons a {
+    max-width: 300px;
+}
+
 .image-stack {
     display: grid;
     position: relative;
+}
+
+.image-stack__item img {
+    border-radius: 25px;
 }
 
 .image-stack__item--bottom {
@@ -396,6 +418,21 @@ img {
         margin-left: 0;
     }
 
+    .offers-item {
+        margin-left: 5rem;
+    }
+
+    .mobile-buttons {
+        display: block;
+    }
+
+        .mobile-buttons a {
+            max-width: 200px;
+        }
+
+    #mobile-call-button {
+        color: black;
+    }
 }
 
 @media (min-width: 768px) {
@@ -426,8 +463,8 @@ img {
 
     .sidebar .collapse {
         /* Never collapse the sidebar for wide screens */
-    display: block;
-}
+        display: block;
+    }
 }
 
 @media (min-width: 992px) {
@@ -435,17 +472,17 @@ img {
         padding-top: 13rem;
     }
 
-    .pizza-item {
+    .pizza-item, .offers-item {
         flex-basis: 32%;
         max-width: 300px;
     }
 
     .offers {
-        padding-top: 15rem;
+        padding-top: 5rem;
     }
 
     .contact-information-page {
-        padding-top: 18rem;
+        padding-top: 16rem;
     }
 
     .contact-information-section, .featured-section {
@@ -455,11 +492,11 @@ img {
     .contact-information-item, .featured-item {
         flex-basis: 0;
     }
-
 }
 
+
 @media (min-width: 640px) {
-    .piza-item {
+    .piza-item, .offers-item {
         flex-basis: 48%;
     }
 }
