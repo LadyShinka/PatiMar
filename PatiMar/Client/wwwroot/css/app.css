@@ -418,8 +418,8 @@ img {
         margin-left: 0;
     }
 
-    .offers-item {
-        margin-left: 5rem;
+    .contact-information-section {
+        padding-left: 0;
     }
 
     .mobile-buttons {
@@ -474,7 +474,7 @@ img {
 
     .pizza-item, .offers-item {
         flex-basis: 32%;
-        max-width: 300px;
+        max-width: 350px;
     }
 
     .offers {
